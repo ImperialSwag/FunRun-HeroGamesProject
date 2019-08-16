@@ -83,6 +83,7 @@ public class PlayerMover : MonoBehaviour
     {
         dead = false;
         animController.enabled = true;
+        animController.SetBool("isRunning", false);
         Rigidbody[] bodies = GetComponentsInChildren<Rigidbody>();
 
         foreach (Rigidbody rb in bodies)
